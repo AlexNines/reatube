@@ -1,23 +1,20 @@
-import React from 'react';
-import TodoList from './Todo/TodoList'
+import React from "react"
+import TodoList from "./Todo/TodoList"
 
 function App() {
-
-    const todos = [
-        {id: 1, completed: false, title: 'Buy the bread'},
-        {id: 2, completed: false, title: 'Buy the fruits'},
-        {id: 3, completed: false, title: 'Buy the meat'},
-        {id: 4, completed: false, title: 'Buy the beer'}
-
-
-
-    ]
-  return (<div className='wrapper'>
+  const todos = [
+    { id: 1, completed: false, title: ")  Buy the bread" },
+    { id: 2, completed: false, title: ")  Buy the fruits" },
+    { id: 3, completed: false, title: ")  Buy the meat" },
+    { id: 4, completed: false, title: ")  Buy the beer" },
+  ];
+  return (
+    <div className="wrapper">
       <h1>React app</h1>
 
       <TodoList todos={todos} />
-  </div>)
-   
+    </div>
+  )
 }
 
-export default App;
+export default App
